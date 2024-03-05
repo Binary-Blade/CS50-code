@@ -6,8 +6,11 @@ void replace(char let[]);
 int main(int argc, char *argv[]) {
   if (argc > 1) {
     replace(argv[1]);
+    return 0;
+
+  } else {
+    return 1;
   }
-  return 0;
 }
 
 void replace(char let[]) {
@@ -26,6 +29,7 @@ void replace(char let[]) {
     case 'o' & 'O':
       printf("0");
       break;
+
     default:
       printf("%c", let[i]);
     }
