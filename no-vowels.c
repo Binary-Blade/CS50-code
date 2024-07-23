@@ -13,11 +13,11 @@ int main(int argc, char *argv[]) {
   }
 }
 
-void replace(char let[]) {
+void replace(char letter[]) {
+  int length = strlen(letter);
 
-  int length = strlen(let);
   for (int i = 0; i < length; i++) {
-    switch (let[i]) {
+    switch (letter[i]) {
     case 'a' & 'A':
       printf("6");
       break;
@@ -31,7 +31,7 @@ void replace(char let[]) {
       break;
 
     default:
-      printf("%c", let[i]);
+      printf("%c", letter[i]);
     }
   }
 }
